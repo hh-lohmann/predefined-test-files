@@ -22,8 +22,9 @@ const _chkArgsPredefinedTestFile=function(mimeType){
 const _getTestfiles=function(searchTerm,mode){
   const internalSearch=searchTerm.replace('/','.');
   let existingFiles=[];
+  const testfilesDir=import.meta.dirname+'/testfiles/';
   try{
-    existingFiles=readdirSync('./testfiles');
+    existingFiles=readdirSync(testfilesDir);
     if(existingFiles.length===0) throw ReferenceError('No testfiles found');
   }
   catch(/** @type {any} */ err){
@@ -38,7 +39,7 @@ const _getTestfiles=function(searchTerm,mode){
     if(existingFiles.length===0) throw Error(_errPrefix+`No testfile for type "${searchTerm}" available - maybe not a valid type`);
     if(existingFiles.length>1) throw Error(_errPrefix+`"${searchTerm}" does not lead to a valid type - maybe a Typo`);
     if(existingFiles[0]!=='testfile.'+searchTerm.replace('/','.')) throw Error(_errPrefix+`"${searchTerm}" is not a valid type - maybe a Typo`);
-    return resolve('testfiles/'+existingFiles[0]);
+    return resolve(testfilesDir+existingFiles[0]);
   }
   existingFiles=existingFiles.map(value=>value.replace(/testfile\.([^\.]+)\./,'$1/'));
   return existingFiles;
