@@ -1,0 +1,28 @@
+{
+  "name": "predefined-test-files",
+  "description": "Predefined files of certain types to test functions working with them",
+  "keywords": [],
+  "author": {
+    "name": "hh lohmann",
+    "email": "hh.lohmann@gmail.com"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hh-lohmann/predefined-test-files.git"
+  },
+  "bugs": "https://github.com/hh-lohmann/predefined-test-files/issues",
+  "homepage": "https://hh-lohmann.github.io/predefined-test-files",
+  "type": "module",
+  "exports": {
+    "types": "./types.d.ts",
+    "default": "./index.js"
+  },
+  "scripts": {
+    "test": "node --test ./tests/**/*.test.*"
+  },
+  "dependencies": {
+    "node-test-bootstrap": "link:../node-test-bootstrap"
+  }
+}
