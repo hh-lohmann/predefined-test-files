@@ -3,8 +3,8 @@
  *  - ! Needs the args actually passed by user, therefore ""...args:any"
  * @returns true if no errors
  */
+export const _chkArgsPredefinedTestFile:_ChkArgsPredefinedTestFile;
 export type _ChkArgsPredefinedTestFile=(...args:any)=>boolean; 
-export const _chkArgsPredefinedTestFile:_chkArgsPredefinedTestFile;
 
   /** Return array of names of existing testfiles matching search string
    *  - Depending on `mode`: exact or partial matches
@@ -14,8 +14,8 @@ export const _chkArgsPredefinedTestFile:_chkArgsPredefinedTestFile;
  * @param mode - How to match: 'exact' vs. 'partial'
  * @returns Array of strings
  */
-export type _GetTestfiles=(searchTerm:string,mode:'exact'|'partial')=>string[]|string;
 export const _getTestfiles:_GetTestfiles;
+export type _GetTestfiles=(searchTerm:string,mode:'exact'|'partial')=>string[]|string;
 
 /** Return absolute path to a testfile or array of names of testfiles
  *  matching a search
@@ -24,7 +24,7 @@ export const _getTestfiles:_GetTestfiles;
  * @param mimeType - MIME Type for which a testfile is requested or
  *                   available testfiles searched (if prefixed with
  *                   "search:")
- * @returns string or array of strings
+ * @returns string or array of strings (TypeScript "any" to allow all contexts)
  */
-export type PredefinedTestfile=(mimeType:string)=>string|string[];
-export const predefinedTestfile:predefinedTestfile;
+export const predefinedTestfile:PredefinedTestfile;
+export type PredefinedTestfile=(mimeType:string)=>any;
