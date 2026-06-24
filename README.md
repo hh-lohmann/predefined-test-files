@@ -155,6 +155,19 @@ Pick for your preferred package manager:
     * Applications consuming relative paths in parameters are likely to resolve them internally to absolute paths anyway
 
 
+## Demo
+
+<!--???? Interactive use case(s) for exposed function(s) / executable(s) -->
+
+<!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+<p id="github_readme_demos_switch">
+  See <a href="https://...repo-owner....github.io/...project-name.../demos"
+  onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
+  || location.hostname === 'localhost' ){ this.href='./demos/';
+  alert( 'Dev environment detected - switching to local version' ); }"
+  >demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
+</p>
+
 
 ## Tests
 

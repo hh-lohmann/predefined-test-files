@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Demos: Predefined files of certain types to test functions working with them
+  </title>
+  <link rel="stylesheet" href="./demos.css">
+  <script type="module" src="./demos_run.js" defer></script>
+</head>
+<body>
+  <h1>
+    Demos for Predefined files of certain types to test functions working with them
+  </h1>
+  <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+  <p id="github_readme_demos_switch">
+    See <a href="https://hh-lohmann.github.io/predefined-test-files"
+    onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
+    || location.hostname === 'localhost' ){ this.href='/';
+    alert( 'Dev environment detected - switching to local version' ); }"
+    >main page</a> for general information about Predefined files of certain types to test functions working with them
+  </p>
+  <section class="demos">
+    <section class="group exact">
+      <h2>
+        Testing a function against a requested testfile
+      </h2>
+      <section class="variant pngTestfile">
+        <h3>
+          PNG testfile
+        </h3>
+        <div class="demo">
+          <span class="placeholder">... loading ...</span>
+        </div>
+      </section>
+    </section>
+    <section class="group search">
+      <h2>
+        Search for MIME Types that have testfiles
+      </h2>
+      <section class="variant imageTestfiles">
+        <h3>
+          MIME Type pattern "image/"
+        </h3>
+        <div class="demo">
+          <span class="placeholder">... loading ...</span>
+        </div>
+      </section>
+    </section>
+  </section>
+  <p class="endspacer"></p>
+</body>
+</html>
