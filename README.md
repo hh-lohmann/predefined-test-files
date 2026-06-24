@@ -96,7 +96,7 @@ Note that not all discussed types are provided yet, but you could add them yours
 
   * Intentionally no options for testing by properties like file size, naming etc. since these do not depend on the type of a file.
 
-  * Not intended for "meta types" (... top level type ...) like "image"
+  * Not intended for "meta types" ([top level types](#internet-assigned-numbers-authority-iana-top-level-media-types)) like "image"
     * You may utilize a `forEach` iteration to test exactly those image types that your function is expected to handle, e.g.
       ```js
         ['gif','jpeg','png'].forEach( value => {
@@ -161,7 +161,7 @@ Pick for your preferred package manager:
 
 <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
 <p id="github_readme_demos_switch">
-  See <a href="https://...repo-owner....github.io/...project-name.../demos"
+  See <a href="https://hh-lohmann.github.io/predefined-test-files/demos"
   onclick="if( location.hostname.replace( /\d/g, '' ).replaceAll( '.', '' ) === ''
   || location.hostname === 'localhost' ){ this.href='./demos/';
   alert( 'Dev environment detected - switching to local version' ); }"
