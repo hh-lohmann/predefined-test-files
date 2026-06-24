@@ -109,28 +109,25 @@ Note that not all discussed types are provided yet, but you could add them yours
 
 ## Installation
 
-<!--???? dev dependencies, else delete -->
-Dev dependencies like this should be installed explicitly as such to make it easier for humans and tooling to separate it from production critical / less exchangeable things, so do not dismiss the "-D" switch ("-d" for Bun) just by regarding it as old-school.
-
 Pick for your preferred package manager:
 
 ```shell
-  npm i -D predefined-test-files
+  npm i predefined-test-files
 ```
 
 ```shell
-  pnpm i -D predefined-test-files
+  pnpm i predefined-test-files
 ```
 
 ```shell
-  bun i -d predefined-test-files
+  bun i predefined-test-files
 ```
 
 ```shell
   # For Yarn you should double check docs for your and / or
   # current Yarn version, newer versions do not treat `i package_name`
   # as an alias for `add ...` and exclude global installations
-  yarn add -D predefined-test-files
+  yarn add predefined-test-files
 ```
 
 
